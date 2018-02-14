@@ -29,7 +29,7 @@ new_rnd = new_date.strftime('%Y-%m-%d')
 # wav
 params['rnd'] = new_rnd
 params['col'] = 1
-params['num'] = 8820
+params['num'] = 4410
 params['max'] = 32767
 params['min'] = -32767
 
@@ -47,4 +47,4 @@ for _ in range(15):
 		mat.append(num)
 	time.sleep(1)
 
-write('test.wav', 44100, mat)
+write('test.wav', 22050, mat)

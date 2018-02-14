@@ -47,4 +47,4 @@ for _ in range(8):
 
 im = Image.new("RGB",(128,128))
 im.putdata(mat)
-im.save('img.jpeg')
+im.save('test.jpeg')
