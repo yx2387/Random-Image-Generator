@@ -1,9 +1,9 @@
 import requests
 from datetime import date,timedelta
 from PIL import Image
-import numpy as np
 import time
 
+# Random twice based on previous records
 start = date(2006,3,11)
 end = date.today()
 num_days = (end-start).days
@@ -43,7 +43,7 @@ for _ in range(8):
 	for line in data:
 		tup = tuple(map(int,line.split()))
 		mat.append(tup)
-	time.sleep(60)
+	time.sleep(1)
 
 im = Image.new("RGB",(128,128))
 im.putdata(mat)
